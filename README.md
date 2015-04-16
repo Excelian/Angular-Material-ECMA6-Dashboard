@@ -1,6 +1,5 @@
 [![Code Climate](https://codeclimate.com/github/Excelian/Angular-Material-ECMA6-Dashboard/badges/gpa.svg)](https://codeclimate.com/github/Excelian/Angular-Material-ECMA6-Dashboard)
-[![Code Climate](https://codeclimate.com/github/Excelian/Angular-Material-ECMA6-Dashboard/badges/gpa.svg)](https://codeclimate.com/github/Excelian/Angular-Material-ECMA6-Dashboard)
-
+[![Test Coverage](https://codeclimate.com/github/Excelian/Angular-Material-ECMA6-Dashboard/badges/coverage.svg)](https://codeclimate.com/github/Excelian/Angular-Material-ECMA6-Dashboard)
 AngularJS Material Design ECMA6 Dashboard
 ===============
 
