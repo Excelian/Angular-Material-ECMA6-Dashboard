@@ -1,7 +1,7 @@
 ES6 + AngularJS
 ===============
 
-This is a sample Angular 1.3 application that is structured using ES6 modules.
+This is a sample Angular 1.3 Material Design Dashboard application that is structured using ES6 modules.
 
 ## Prerequisites:
 
