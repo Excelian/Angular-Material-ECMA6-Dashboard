@@ -3,10 +3,13 @@
 AngularJS Material Design ECMA6 Dashboard
 ===============
 
-This is a sample Angular 1.3 Material Design Dashboard application that is structured using ES6 modules.
+This is a starting point to create an Angular 1.3 Material Design application that is structured using ES6 modules in a component based way. It comes with karma/protractor testing, Traceuer transpitation and live reload out of the box.
+
+- [ECMA6 new features](https://github.com/lukehoban/es6features/blob/master/README.md)
+- [Angular Material](https://material.angularjs.org/#/demo/material.components.input)
+- [Google Material Design Spec](http://www.google.com/design/spec/material-design/introduction.html)
 
 ## Prerequisites:
-
 - node.js
 
 ## Application Dependencies
@@ -26,7 +29,7 @@ You can run `script/start` to fire up the application on `http://localhost:3010`
 
 You can use `npm test` to run JSHint, Karma Unit tests and our E2E tests.
 
-Typically in development we run only unit tests. You can run these with Karma:
+To run just the Karma tests use:
 
 ```
 ./node_modules/.bin/karma start
@@ -65,20 +68,9 @@ HTTP_PORT=3010 ./node_modules/.bin/protractor --specs client/app/routes/mandates
 ```
 
 ### Pausing the browser
-
-Add `browser.pause();` to your spec.
-
-```js
-it('renders index', function() {
-  browser.get('app/index.html');
-
-  // Use browser.pause() in your test to enter the protractor debugger from
-  // that point in the control flow. Does not require changes to the command line
-  // (no need to add 'debug').
-  browser.pause();
-});
-```
+Add `browser.pause();` to your spec.`
 
 ## Credits
 
 - Build system/ES6 tooling: [Guy Bedford](https://github.com/guybedford)
+- ECMA6 Angular Project by GoCardless
