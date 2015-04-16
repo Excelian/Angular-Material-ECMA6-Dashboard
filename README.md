@@ -1,4 +1,4 @@
-ES6 + AngularJS
+AngularJS Material Design ECMA6 Dashboard
 ===============
 
 This is a sample Angular 1.3 Material Design Dashboard application that is structured using ES6 modules.
