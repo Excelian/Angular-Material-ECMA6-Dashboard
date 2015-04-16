@@ -1,0 +1,45 @@
+<!doctype html>
+<!--[if IE 9]>         <html lang="en-gb" class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en-gb"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1" />
+  <title>Microservices Dashboard</title>
+  <base href="/">
+  <link rel="stylesheet" href="/main.css">
+</head>
+<body data-main-app ng-cloak>
+  <!--[if lt IE 10]>
+    <div class="u-padding-Am deprecation-warning">
+      <h1>You are using an outdated browser.</h1>
+      <p>Please <a href="http://whatbrowser.org/">upgrade your browser</a> to improve your experience.</p>
+    </div>
+  <![endif]-->
+  <noscript>
+    <div class="u-padding-Am deprecation-warning">
+      <h1>Please enable Javascript</h1>
+      <p>This application requires your browser to have Javascript enabled.
+      <a href="http://enable-javascript.com" target="_blank">Learn more</a></p>
+    </div>
+  </noscript>
+
+  <section layout="row" id="main-pane">
+    <ui-view class="side-pane" name="side-menu"></ui-view>
+    <div flex layout="column">
+      <ui-view  name="top-bar"></ui-view>
+      <ui-view></ui-view>
+    </div>
+  </section>
+
+
+  <script src="./components/traceur/traceur.js"></script>
+  <script src="./components/traceur-runtime/traceur-runtime.js"></script>
+  <script src="./components/es6-module-loader/dist/es6-module-loader.src.js"></script>
+  <script src="./components/system.js/dist/system.src.js"></script>
+  <script src="./loader.config.js"></script>
+  <script>
+    System.baseURL = '/';
+    System.import('app/bootstrap');
+  </script>
+</body>
+</html>

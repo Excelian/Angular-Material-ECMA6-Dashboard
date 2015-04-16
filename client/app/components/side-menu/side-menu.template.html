@@ -1,0 +1,29 @@
+<md-sidenav class="md-sidenav-left md-whiteframe-z2 side-pane" md-is-locked-open="$mdMedia('gt-sm')"
+            md-component-id="left">
+  <md-toolbar>
+    <h1 class="md-toolbar-tools">Dashboard </h1>
+  </md-toolbar>
+  <md-content flex role="navigation" class="md-default-theme" layout="row" layout-align="start start">
+    <ul id="side-menu" flex>
+      <li ng-repeat="menuItem in menuItems">
+        <a class="md-default-theme"
+           ng-href="{{menuItem.url}}">
+          <div layout="row">
+            <md-button class="md-primary md-hue-1">
+              <span>
+                <md-icon md-svg-icon="{{menuItem.icon}}"></md-icon>
+                {{menuItem.title}}
+              </span>
+            </md-button>
+          </div>
+          <div class="md-ripple-container"></div>
+        </a>
+      </li>
+    </ul>
+  </md-content>
+  <md-content class="md-padding">
+    <md-button ng-click="close()" class="md-primary" hide-gt-md>
+      Close
+    </md-button>
+  </md-content>
+</md-sidenav>

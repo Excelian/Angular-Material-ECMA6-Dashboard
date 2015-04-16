@@ -1,0 +1,12 @@
+#side-menu .md-button{
+  width:100%;
+  text-transform: none;
+}
+
+#side-menu a span{
+  float: left;
+}
+
+#side-menu md-icon{
+  margin-right: 10px;
+}
