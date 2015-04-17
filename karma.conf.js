@@ -1,1 +1,0 @@
-config/karma.config.js

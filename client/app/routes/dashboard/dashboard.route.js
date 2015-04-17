@@ -27,6 +27,6 @@ export var dashboardRouteModule = angular.module('dashboardRouteModule', [
         title:'Settings',
         icon:'assets/img/icons/ic_settings_24px.svg'
       }
-    )
+    );
   }
 ]);

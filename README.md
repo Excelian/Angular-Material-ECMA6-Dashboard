@@ -32,7 +32,7 @@ You can use `npm test` to run JSHint, Karma Unit tests and our E2E tests.
 To run just the Karma tests use:
 
 ```
-./node_modules/.bin/karma start
+karma start ./config/karma.config.js
 ```
 
 Karma will automatically watch the files and rerun tests when files change.

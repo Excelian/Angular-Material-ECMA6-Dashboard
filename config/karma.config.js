@@ -8,7 +8,7 @@ traceurOptions.moduleName = null;
 
 module.exports = function(config) {
   config.set({
-    basePath: './client',
+    basePath: '../client',
     frameworks: ['jasmine', 'traceur'],
     browsers: ['Chrome'],
     reporters: ['progress'],
@@ -26,17 +26,17 @@ module.exports = function(config) {
       '../config/file-name-to-module-name.js',
 
       // Load and initialize all spec files using SystemJS
-      '../config/karma-spec-loader.config.js',
+      '../config/karma-spec-loader.config.js'
     ],
     exclude: [
       '*-compiled/**',
-      'assets/**',
+      'assets/**'
     ],
     preprocessors: {
-      'app/**/*.js': ['traceur'],
+      'app/**/*.js': ['traceur']
     },
     traceurPreprocessor: {
       options: traceurOptions
-    },
+    }
   });
 };
