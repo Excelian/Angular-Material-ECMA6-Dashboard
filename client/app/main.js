@@ -6,7 +6,6 @@ import 'angular-messages';
 import 'angular-i18n-en-gb';
 import 'angular-material';
 
-
 import {mainConfigModule} from 'app/config/main.config';
 
 import {dashboardRouteModule} from 'app/routes/dashboard/dashboard.route';
