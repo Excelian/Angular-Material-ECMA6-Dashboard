@@ -12,7 +12,7 @@ module.exports = function(config) {
     frameworks: ['jasmine', 'traceur'],
     browsers: ['Chrome'],
     reporters: ['progress','coverage'],
-    plugins: ['karma-jasmine','karma-traceur-preprocessor','karma-coverage','karma-chrome-launcher','karma-phantomjs-launcher'],
+    plugins: ['karma-jasmine','karma-traceur-preprocessor','karma-coverage','karma-chrome-launcher','karma-firefox-launcher'],
     files: [
       'components/es6-module-loader/dist/es6-module-loader.src.js',
       'components/system.js/dist/system.src.js',
