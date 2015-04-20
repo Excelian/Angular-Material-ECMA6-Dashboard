@@ -20,7 +20,6 @@
     "angular-ui-router": "~0.2.13",
     "normalize-css": "~3.0.2",
     "lodash": "~2.4.1",
-    "assert": "git@github.com:angular/assert.git",
     "angular-material": "~0.8.3"
   },
   "resolutions": {
