@@ -11,7 +11,8 @@ module.exports = function(config) {
     basePath: '../client',
     frameworks: ['jasmine', 'traceur'],
     browsers: ['Chrome'],
-    reporters: ['progress'],
+    reporters: ['progress','coverage'],
+    plugins: ['karma-jasmine','karma-traceur-preprocessor','karma-coverage'],
     files: [
       'components/es6-module-loader/dist/es6-module-loader.src.js',
       'components/system.js/dist/system.src.js',
@@ -33,7 +34,12 @@ module.exports = function(config) {
       'assets/**'
     ],
     preprocessors: {
+      'src/**/!(*.spec|*.mock.js).js': ['coverage'],
       'app/**/*.js': ['traceur']
+    },
+    coverageReporter: {
+      type : 'html',
+      dir : '../coverage'
     },
     traceurPreprocessor: {
       options: traceurOptions
