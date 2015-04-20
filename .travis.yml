@@ -12,4 +12,4 @@ before_script:
   - 'bower install'
 
 after_script:
-  - 'codeclimate < client/test/coverage/**/lcov.info'
+  - 'codeclimate < test/coverage/**/lcov.info'
