@@ -21,8 +21,7 @@
     "normalize-css": "~3.0.2",
     "lodash": "~2.4.1",
     "assert": "git@github.com:angular/assert.git",
-    "angular-material": "~0.8.3",
-    "material-design-icons": "~1.0.1"
+    "angular-material": "~0.8.3"
   },
   "resolutions": {
     "angular": "1.3.6"
