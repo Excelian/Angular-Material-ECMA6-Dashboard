@@ -4,14 +4,14 @@
   "version": "0.0.1-pre",
   "description": "ES6 + AngularJS",
   "scripts": {
-    "test": "./node_modules/.bin/karma start ./config/karma.config.js --single-run --browsers PhantomJS"
+    "test": "./node_modules/.bin/karma start ./config/karma.config.js --single-run --browsers Firefox"
   },
   "repository": {
     "type": "git"
   },
   "devDependencies":{
     "phantomjs": "^1.9.16",
-    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-firefox-launcher": "^0.1.4",
     "karma-coverage": "^0.3.1",
     "traceur": "^0.0.74"
   },
