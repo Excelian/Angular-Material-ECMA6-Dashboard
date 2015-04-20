@@ -9,6 +9,11 @@
   "repository": {
     "type": "git"
   },
+  "devDependencies":{
+    "phantomjs": "^1.9.16",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-coverage": "^0.3.1"
+  },
   "dependencies": {
     "assetgraph": "^1.12.1",
     "assetgraph-builder": "^2.5.1",
@@ -47,9 +52,7 @@
     "traceur": "^0.0.74",
     "write-file-stdout": "0.0.2",
     "path": "^0.11.14",
-    "fs": "0.0.2",
-    "karma-coverage": "^0.3.1",
-    "phantomjs": "^1.9.16",
-    "karma-phantomjs-launcher": "^0.1.4"
+    "fs": "0.0.2"
+
   }
 }
