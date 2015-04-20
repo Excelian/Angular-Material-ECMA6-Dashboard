@@ -2,6 +2,8 @@
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$/client/app/bootstrap.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/app/components/dashboard/Alerts/alerts.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/app/components/dashboard/Alerts/alertsController.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/components/dashboard/service-overview/service-overview.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/components/dashboard/settings/settings.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/app/components/top-bar/top-bar.template.html" charset="UTF-8" />
