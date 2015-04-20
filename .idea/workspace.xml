@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ac9f86c-5b24-444e-aaf1-e6548a299d38" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/img/icons/ic_access_alarm_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/img/icons/ic_error_24px.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/img/icons/ic_warning_24px.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/assets/stylesheets/shared/base.css" afterPath="$PROJECT_DIR$/client/assets/stylesheets/shared/base.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/bootstrap.js" afterPath="$PROJECT_DIR$/client/app/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/routes/dashboard/dashboard.route.js" afterPath="$PROJECT_DIR$/client/app/routes/dashboard/dashboard.route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/config/main.config.js" afterPath="$PROJECT_DIR$/client/app/config/main.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/main.js" afterPath="$PROJECT_DIR$/client/app/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/dashboard/service-overview/service-overview.html" afterPath="$PROJECT_DIR$/client/app/components/dashboard/service-overview/service-overview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/dashboard/settings/settings.html" afterPath="$PROJECT_DIR$/client/app/components/dashboard/settings/settings.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test.iws" />
@@ -53,8 +43,8 @@
       <file leaf-file-name="bootstrap.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/app/bootstrap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44386423" vertical-offset="0" max-vertical-offset="383">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.31070495" vertical-offset="0" max-vertical-offset="383">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -444,12 +434,20 @@
       <option name="number" value="Default" />
       <updated>1428575612025</updated>
     </task>
+    <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:Excelian/Angular-Material-ECMA6-Dashboard&#10;&#10;Conflicts:&#10;&#9;client/app/bootstrap.js&#10;">
+      <created>1429522387946</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1429522387946</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -466,7 +464,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -508,6 +505,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Merge branch 'master' of github.com:Excelian/Angular-Material-ECMA6-Dashboard&#10;&#10;Conflicts:&#10;&#9;client/app/bootstrap.js&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of github.com:Excelian/Angular-Material-ECMA6-Dashboard&#10;&#10;Conflicts:&#10;&#9;client/app/bootstrap.js&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -850,14 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/karma.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6896553" vertical-offset="204" max-vertical-offset="918">
-          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/components/side-menu/side-menu.directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
@@ -874,10 +865,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/karma.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6896553" vertical-offset="204" max-vertical-offset="918">
+          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44386423" vertical-offset="0" max-vertical-offset="383">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.31070495" vertical-offset="0" max-vertical-offset="383">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding />
         </state>
       </provider>
