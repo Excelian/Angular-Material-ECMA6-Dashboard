@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ac9f86c-5b24-444e-aaf1-e6548a299d38" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\tushara.fernando\Projects\Angular-Material-ECMA6-Dashboard\coverage\Chrome 42.0.2311 (Windows 7)\app\components\side-menu\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tushara.fernando\Projects\Angular-Material-ECMA6-Dashboard\coverage\Chrome 42.0.2311 (Windows 7)\app\components\side-menu\side-menu.controller.js.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tushara.fernando\Projects\Angular-Material-ECMA6-Dashboard\coverage\Chrome 42.0.2311 (Windows 7)\base.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tushara.fernando\Projects\Angular-Material-ECMA6-Dashboard\coverage\Chrome 42.0.2311 (Windows 7)\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tushara.fernando\Projects\Angular-Material-ECMA6-Dashboard\coverage\Chrome 42.0.2311 (Windows 7)\prettify.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tushara.fernando\Projects\Angular-Material-ECMA6-Dashboard\coverage\Chrome 42.0.2311 (Windows 7)\prettify.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tushara.fernando\Projects\Angular-Material-ECMA6-Dashboard\coverage\Chrome 42.0.2311 (Windows 7)\sort-arrow-sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\tushara.fernando\Projects\Angular-Material-ECMA6-Dashboard\coverage\Chrome 42.0.2311 (Windows 7)\sorter.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/karma.config.js" afterPath="$PROJECT_DIR$/config/karma.config.js" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +43,8 @@
       <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3984375" vertical-offset="0" max-vertical-offset="384">
-              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.6197917" vertical-offset="0" max-vertical-offset="384">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -81,8 +73,8 @@
       <file leaf-file-name="karma.config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/karma.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1037">
+              <caret line="45" column="18" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -151,8 +143,8 @@
         <option value="$PROJECT_DIR$/client/app/components/dashboard/Alerts/alerts.html" />
         <option value="$PROJECT_DIR$/client/app/components/dashboard/Alerts/alertsController.js" />
         <option value="$PROJECT_DIR$/bower.json" />
-        <option value="$PROJECT_DIR$/config/karma.config.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/config/karma.config.js" />
         <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
@@ -792,14 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/karma.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.7777778" vertical-offset="0" max-vertical-offset="1024">
@@ -816,10 +800,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/karma.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1037">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3984375" vertical-offset="0" max-vertical-offset="384">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.6197917" vertical-offset="0" max-vertical-offset="384">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding />
         </state>
       </provider>

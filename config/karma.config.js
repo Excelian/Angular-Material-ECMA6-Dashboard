@@ -38,12 +38,18 @@ module.exports = function(config) {
       'app/**/!(*.spec|*.mock.js).js': ['coverage']
     },
     coverageReporter: {
-      type : 'html',
-      dir : '../coverage'
+      reporters: [{
+        type: 'text',
+        dir: 'test/coverage'
+      }, {
+        type: 'lcov',
+        dir: 'test/coverage'
+      }]
     },
     traceurPreprocessor: {
       options: traceurOptions
     },
-    autoWatch: false
+    autoWatch: false,
+    singleRun: true
   });
 };
