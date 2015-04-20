@@ -11,5 +11,5 @@ before_script:
   - 'bower install'
 
 after_script:
-  - codeclimate < coverage/**/lcov.info
+  - codeclimate < lcov.info
 
