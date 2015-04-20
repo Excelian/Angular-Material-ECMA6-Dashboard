@@ -9,4 +9,8 @@ before_install:
   - npm config set loglevel warn
 
 before_script:
+  - 'npm install -g bower grunt-cli karma'
+  - 'bower install'
+
+script: grunt
 
