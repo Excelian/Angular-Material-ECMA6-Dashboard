@@ -7,26 +7,26 @@
         </div>
       </md-toolbar>
       <md-content layout-padding layout="row" layout-sm="column">
-        <md-switch class="md-warn" ng-model="data.cbFreeze" aria-label="Freeze Switch">
-          <label>
-            Freeze Display
+        <md-switch class="md-warn" ng-model="displayControl.displayFrozen" aria-label="Freeze Switch">
+          <label class="light-text">
+            {{displayControl.displayFrozen?'Unfreeze Display':'Freeze Display'}}
           </label>
         </md-switch>
         <md-input-container>
           <label>Filter</label>
-          <input ng-model="data.filter">
+          <input ng-model="displayControl.filter">
         </md-input-container>
       </md-content>
       <md-content md-theme="docs-dark" layout-padding layout="row" layout-sm="column">
-        <md-list>
-          <md-list-item layout="row" layout-align="start center" ng-repeat="alert in alerts">
-            <span>
+        <md-list style="max-height: 300px">
+          <md-list-item layout="row" layout-align="start center" ng-repeat="alert in alerts | filter:{description: displayControl.filter}">
+            <span class="light-text">
             <md-icon md-svg-icon="assets/img/icons/ic_error_24px.svg" style="color:red"
                      ng-show="alert.type==='error'"></md-icon>
             <md-icon md-svg-icon="assets/img/icons/ic_warning_24px.svg" style="color:darkorange"
                      ng-show="alert.type==='warning'"></md-icon>
+            <strong>{{alert.ts}}</strong> {{alert.description}}
               </span>
-            <md-subheader ><strong>{{alert.ts}}</strong> {{alert.description}}</md-subheader>
           </md-list-item>
         </md-list>
       </md-content>

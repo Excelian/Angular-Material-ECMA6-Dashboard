@@ -4,5 +4,6 @@
 @import "../../components/angular-material/angular-material.css";
 @import "../../app/components/top-bar/top-bar.css";
 @import"../../app/components/side-menu/side-menu.css";
+@import"../../app/components/dashboard/dashboard.css";
 @import 'shared/base.css';
 
