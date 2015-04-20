@@ -8,6 +8,6 @@ set -e errexit
 
 ./node_modules/.bin/jshint .
 
-./node_modules/.bin/karma start --single-run
+./node_modules/.bin/karma start ./config/karma.config.js --single-run
 
 ./script/e2etest

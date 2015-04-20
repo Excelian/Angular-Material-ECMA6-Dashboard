@@ -38,6 +38,6 @@ export var dashboardRouteModule = angular.module('dashboardRouteModule', [
         icon:'assets/img/icons/ic_access_alarm_24px.svg',
         controller: 'alertsController'
       }
-    )
+    );
   }
 ]);

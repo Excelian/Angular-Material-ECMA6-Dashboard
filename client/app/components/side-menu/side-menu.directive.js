@@ -9,10 +9,7 @@ export var sideMenuComponentModule = angular.module('sideMenuComponentModule', [
       controller: [
         '$scope', '$mdSidenav','$state', function ($scope, $mdSidenav, $state) {
           $scope.close = function () {
-            $mdSidenav('left').close()
-              .then(function () {
-                $log.debug("close LEFT is done");
-              });
+            $mdSidenav('left').close();
           };
           $scope.menuItems= [];
           var menuItems= $state.get();

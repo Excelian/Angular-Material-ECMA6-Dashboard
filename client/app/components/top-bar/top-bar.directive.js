@@ -12,7 +12,7 @@ export var topBarComponentModule = angular.module('topBarComponentModule', [
           $mdSidenav('left').toggle();
         };
         $rootScope.$on('$stateChangeSuccess',
-          function(event, toState, toParams, fromState, fromParams){
+          function(){
             $scope.title = $state.current.title;
           });
         $scope.title = $state.current.title;

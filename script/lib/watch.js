@@ -30,7 +30,7 @@ function rootPath(filepath) {
 
 function handleCompile(filepath, callback) {
   var ext = path.extname(filepath);
-  var inUncompiled = path.dirname(filepath).split('\\')[0]=='app';
+  var inUncompiled = path.dirname(filepath).split('\\')[0]==='app';
   var compiledFile;
   if (ext === '.css') {
     exec('./script/css', function (err) {
@@ -53,7 +53,6 @@ function handleCompile(filepath, callback) {
   } else if (inUncompiled) {
     // copy any non-js accross
     compiledFile = filepath.replace(/^(app)/g, '$1-compiled');
-    console.log("eee");
 
     fs.writeFileSync(rootPath(compiledFile), fs.readFileSync(rootPath(filepath)));
     callback(null, compiledFile, true);
