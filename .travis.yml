@@ -12,4 +12,4 @@ before_script:
   - 'bower install'
 
 after_script:
-  - 'CODECLIMATE_REPO_TOKEN=183911307c7e62d8c7ff7aac1a0d20ca9e132bef0feedbcfe42a71d4e7b812e5 codeclimate < client/test/coverage/**/lcov.info'
+  - 'codeclimate < client/test/coverage/**/lcov.info'
