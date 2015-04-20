@@ -195,3 +195,10 @@ textarea::-webkit-input-placeholder {
 [ng-cloak] {
   display: none;
 }
+
+.warning-alert {
+  color: #f6a828;
+}
+.error-alert {
+  color: #aa0000;
+}
