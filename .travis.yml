@@ -1,2 +1,12 @@
+language: node_js
+node_js:
+  - 0.10
+before_install:
+before_script:
+  - npm install -g grunt-cli
+  - npm install -d
+branches:
+  only:
+    - master
 after_success:
   - codeclimate < ./coverage/lcov.info
