@@ -1,5 +1,5 @@
 import angular from 'angular';
-import SideMenuController from 'app/components/side-menu/sideMenu.controller'
+import SideMenuController from 'app/components/side-menu/side-menu.controller'
 
 import template from './side-menu.template.html!text';
 export var sideMenuComponentModule = angular.module('sideMenuComponentModule', []).directive('sideMenu', [

@@ -49,6 +49,7 @@
     "traceur": "^0.0.74",
     "write-file-stdout": "0.0.2",
     "path": "^0.11.14",
-    "fs": "0.0.2"
+    "fs": "0.0.2",
+    "karma-coverage": "^0.3.1"
   }
 }
