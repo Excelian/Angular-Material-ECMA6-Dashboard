@@ -1,13 +1,12 @@
 language: node_js
 node_js:
   - 0.8
+  - 0.10
+
+# Make sure we have new NPM.
 before_install:
+  - npm install -g npm
+  - npm config set loglevel warn
+
 before_script:
-  - npm install -g grunt-cli
-  - npm install -d
-  - npm install -g karma-coverage
-branches:
-  only:
-    - master
-after_success:
-  - codeclimate < ./coverage/lcov.info
+
