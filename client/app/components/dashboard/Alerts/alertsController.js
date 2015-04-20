@@ -53,7 +53,7 @@ export default class alertsController {
     // Periodically add a new event to the array
     function logTick() {
 
-      if ($scope.data.displayFrozen){
+      if ($scope.displayControl.displayFrozen){
         return;
       }
       var t = $filter('date')(new Date(), 'yyyy-MM-dd hh:mm:ss');
