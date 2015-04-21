@@ -14,5 +14,6 @@
     <file url="file://$PROJECT_DIR$/client/assets/stylesheets/main.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client/assets/stylesheets/shared/base.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/contributors.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/package.json" charset="ISO-8859-1" />
   </component>
 </project>
