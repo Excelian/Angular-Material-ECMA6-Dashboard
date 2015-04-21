@@ -27,7 +27,7 @@
     "graceful-fs": "^3.0.5",
     "jasmine-core": "^2.1.2",
     "jshint": "^2.5.6",
-    "karma": "^0.12.24",
+    "karma": "https://registry.npmjs.org/karma/-/karma-0.12.28.tgz",
     "karma-chrome-launcher": "https://registry.npmjs.org/karma-chrome-launcher/-/karma-chrome-launcher-0.1.7.tgz",
     "karma-cli": "^0.0.4",
     "karma-firefox-launcher": "^0.1.3",
