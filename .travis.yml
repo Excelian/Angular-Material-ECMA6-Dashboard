@@ -1,12 +1,15 @@
 language: node_js
 node_js:
   - 0.10
+
+# Make sure we have new NPM.
 before_install:
+  - npm install -g codeclimate-test-reporter
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+
 before_script:
-  - npm install -g grunt-cli
-  - npm install -d
-branches:
-  only:
-    - master
-after_success:
-  - codeclimate < ./coverage/lcov.info
+  - 'bower install'
+
+after_script:
+  - 'codeclimate < test/coverage/**/lcov.info'

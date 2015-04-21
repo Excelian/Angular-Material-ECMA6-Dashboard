@@ -11,8 +11,8 @@ module.exports = function(config) {
     basePath: '../client',
     frameworks: ['jasmine', 'traceur'],
     browsers: ['Chrome'],
-    reporters: ['progress','coverage'],
-    plugins: ['karma-jasmine','karma-traceur-preprocessor','karma-coverage'],
+    reporters: ['dots','progress','coverage'],
+    plugins: ['karma-jasmine','karma-traceur-preprocessor','karma-coverage','karma-chrome-launcher','karma-firefox-launcher'],
     files: [
       'components/es6-module-loader/dist/es6-module-loader.src.js',
       'components/system.js/dist/system.src.js',
@@ -38,11 +38,16 @@ module.exports = function(config) {
       'app/**/!(*.spec|*.mock.js).js': ['coverage']
     },
     coverageReporter: {
-      type : 'html',
-      dir : '../coverage'
+      reporters: [{
+        type: 'lcov',
+        dir: '../test/coverage',
+        file : 'lcov.info'
+      }]
     },
     traceurPreprocessor: {
       options: traceurOptions
-    }
+    },
+    autoWatch: false,
+    singleRun: true
   });
 };
