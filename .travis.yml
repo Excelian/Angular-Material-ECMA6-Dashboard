@@ -15,5 +15,5 @@ before_script:
 after_script:
   - 'rm -R ./client/coverage/'
   - 'mv .client/coverage/**/lcov.info ./client/ '
-  - 'ls ./client/coverage'
+  - 'ls ./client'
   - 'codeclimate < ./client/coverage/**/lcov.info'
