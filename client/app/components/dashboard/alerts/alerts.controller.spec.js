@@ -2,7 +2,7 @@
  * Created by tim.hughes on 17/04/2015.
  */
 import 'angular-mock';
-import AlertsController from 'app/components/dashboard/alerts/alerts.controller';
+import AlertsController from './alerts.controller';
 
 describe('Alerts Controller', function(){
   var scope, interval, filter;
