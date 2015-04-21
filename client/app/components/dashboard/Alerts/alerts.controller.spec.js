@@ -1,22 +1,24 @@
 /**
  * Created by tim.hughes on 17/04/2015.
  */
-import angular from 'angular';
 import 'angular-mock';
 import AlertsController from 'app/components/dashboard/alerts/alerts.controller';
 
-describe('Side Menu', function(){
+describe('Alerts Controller', function(){
   var scope, interval, filter;
   beforeEach(inject(function($injector) {
     scope = $injector.get('$rootScope');
+    interval = $injector.get('$interval');
+    filter = $injector.get('$filter');
   }));
 
   it('Should create an alerts controller', function(){
-    var sideMenuController = new AlertsController(scope, $interval, $filter);
-    expect(sideMenuController).toBeDefined();
+    var ac = new AlertsController(scope, interval, filter);
+    expect(ac).toBeDefined();
   });
-  it('Should populate the side menu with an array of items with views with titles', function(){
-    AlertsController(scope, $interval, $filter);
-    expect(scope.menuItems.length).toEqual(1);
-  })
+
+  it('Should populate the alerts array', function(){
+    var ac = new AlertsController(scope, interval, filter);
+    expect(scope.alerts.length).toEqual(8);
+  });
 });

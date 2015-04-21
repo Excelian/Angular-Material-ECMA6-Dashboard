@@ -1,7 +1,7 @@
 export default class AlertsController {
   constructor($scope, $interval, $filter) {
 
-    $scope.displayControl = {filter: "", displayFrozen: false};
+    $scope.displayControl = {filter: '', displayFrozen: false};
     $scope.alerts = [];
 
     $scope.alerts.push({type: 'error', ts: '2015-04-17 17:00:01', description: 'Trade Services connection lost.'});
@@ -51,8 +51,6 @@ export default class AlertsController {
     });
 
     // Periodically add a new event to the array
-    var logTickTimer = $interval(logTick, 5000);
-
     function logTick() {
 
       $interval.cancel(logTickTimer);
@@ -84,16 +82,14 @@ export default class AlertsController {
       }
 
       logTickTimer = $interval(logTick, (Math.random() * 10000) + 300);
-
     }
 
-    $scope
-      .
-      $on(
-      '$destroy',
+    var logTickTimer = $interval(logTick, 5000);
+
+    $scope.$on('$destroy',
       function () {
         $interval.cancel(logTickTimer);
       }
-    )
+    );
   }
 }
