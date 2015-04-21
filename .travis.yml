@@ -15,4 +15,5 @@ before_script:
 after_script:
   - 'mv ./client/coverage/**/lcov.info ./client/ '
   - 'ls ./client'
+  - 'cd client'
   - 'codeclimate < ./client/lcov.info'
