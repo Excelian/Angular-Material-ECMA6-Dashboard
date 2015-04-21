@@ -21,4 +21,8 @@ describe('Alerts Controller', function(){
     var ac = new AlertsController(scope, interval, filter);
     expect(scope.alerts.length).toEqual(12);
   });
+  it('Should not be frozen', function(){
+    var ac = new AlertsController(scope, interval, filter);
+    expect(scope.displayControl.displayFrozen).toEqual(false);
+  });
 });
