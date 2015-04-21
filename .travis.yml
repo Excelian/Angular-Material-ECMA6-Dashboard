@@ -13,4 +13,6 @@ before_script:
   - 'bower install'
 
 after_script:
+  - 'mv test/coverage/**/lcov.info . '
+  - 'ls'
   - 'codeclimate < test/coverage/**/lcov.info'
