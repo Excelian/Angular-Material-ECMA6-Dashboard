@@ -19,6 +19,6 @@ describe('Alerts Controller', function(){
 
   it('Should populate the alerts array', function(){
     var ac = new AlertsController(scope, interval, filter);
-    expect(scope.alerts.length).toEqual(8);
+    expect(scope.alerts.length).toEqual(12);
   });
 });

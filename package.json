@@ -9,10 +9,10 @@
   "repository": {
     "type": "git"
   },
-  "devDependencies":{
-    "phantomjs": "^1.9.16",
-    "karma-firefox-launcher": "^0.1.4",
+  "devDependencies": {
     "karma-coverage": "^0.3.1",
+    "karma-firefox-launcher": "^0.1.4",
+    "phantomjs": "^1.9.16",
     "traceur": "^0.0.74"
   },
   "dependencies": {
@@ -53,6 +53,5 @@
     "write-file-stdout": "0.0.2",
     "path": "^0.11.14",
     "fs": "0.0.2"
-
   }
 }

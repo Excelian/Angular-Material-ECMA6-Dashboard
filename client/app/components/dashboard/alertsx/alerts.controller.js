@@ -43,7 +43,6 @@ export default class AlertsController {
       ts: '2015-04-17 15:42:23',
       description: 'Auth Services response timeout, retrying.'
     });
-
     $scope.alerts.push({
       type: 'warning',
       ts: '2015-04-17 15:42:23',
