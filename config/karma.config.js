@@ -35,7 +35,7 @@ module.exports = function(config) {
     ],
     preprocessors: {
       'app/**/*.js': ['traceur'],
-      'app/**/!(*.spec|*.mock.js).js': ['coverage']
+      'app/**/!(*.spec|*.mock).js': ['coverage']
     },
     coverageReporter: {
       reporters: [{
