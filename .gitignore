@@ -10,4 +10,4 @@ client/app-compiled
 node_modules
 client/components
 
-.idea
+.idea/*
