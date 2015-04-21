@@ -1,7 +1,7 @@
-export default class alertsController {
-  constructor($scope,$interval,$filter) {
+export default class AlertsController {
+  constructor($scope, $interval, $filter) {
 
-    $scope.displayControl = {filter:"",displayFrozen:false};
+    $scope.displayControl = {filter: "", displayFrozen: false};
     $scope.alerts = [];
 
     $scope.alerts.push({type: 'error', ts: '2015-04-17 17:00:01', description: 'Trade Services connection lost.'});
@@ -51,24 +51,49 @@ export default class alertsController {
     });
 
     // Periodically add a new event to the array
+    var logTickTimer = $interval(logTick, 5000);
+
     function logTick() {
 
-      if ($scope.displayControl.displayFrozen){
+      $interval.cancel(logTickTimer);
+
+      if ($scope.displayControl.displayFrozen) {
         return;
       }
       var t = $filter('date')(new Date(), 'yyyy-MM-dd hh:mm:ss');
 
-      $scope.alerts.unshift({
-        type: 'warning',
-        ts: t,
-        description: 'Another Service warning message.'
-      });
+      var r = Math.random();
+      if (r > 0.7) {
+        $scope.alerts.unshift({
+          type: 'error',
+          ts: t,
+          description: 'Random Service error message.'
+        });
+      } else if (r < 0.1) {
+        $scope.alerts.unshift({
+          type: 'info',
+          ts: t,
+          description: 'Random Service is restored.'
+        });
+      } else {
+        $scope.alerts.unshift({
+          type: 'warning',
+          ts: t,
+          description: 'Random Service warning message.'
+        });
+      }
+
+      logTickTimer = $interval(logTick, (Math.random() * 10000) + 300);
+
     }
 
-    var logTickTimer = $interval( logTick,5000 );
-
-    $scope.$on('$destroy', function(){
-      $interval.cancel(logTickTimer);
-    })
+    $scope
+      .
+      $on(
+      '$destroy',
+      function () {
+        $interval.cancel(logTickTimer);
+      }
+    )
   }
 }
