@@ -11,3 +11,5 @@ node_modules
 client/components
 
 .idea/*
+
+client/coverage/*
