@@ -7,3 +7,11 @@
 .light-text {
   color: #a0a0a0;
 }
+.light-text-even {
+  background-color: #b0b0b0;
+  width: 100%;
+}
+.light-text-odd {
+  background-color: #e0e0e0;
+  width: 100%;
+}

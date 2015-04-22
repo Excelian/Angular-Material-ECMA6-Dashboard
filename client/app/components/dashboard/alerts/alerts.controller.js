@@ -57,7 +57,7 @@ export default class AlertsController {
       if ($scope.displayControl.displayFrozen) {
         return;
       }
-      var t = $filter('date')(new Date(), 'yyyy-MM-dd hh:mm:ss');
+      var t = $filter('date')(new Date(), 'yyyy-MM-dd HH:mm:ss');
 
       var r = Math.random();
       if (r > 0.7) {
