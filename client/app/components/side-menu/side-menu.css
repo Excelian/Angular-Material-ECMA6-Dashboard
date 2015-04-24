@@ -1,6 +1,6 @@
-#side-menu .md-button{
-  width:100%;
-  text-transform: none;
+#side-menu button.md-button {
+  width: 100%;
+  padding-top: 20px;
 }
 
 #side-menu a span{
