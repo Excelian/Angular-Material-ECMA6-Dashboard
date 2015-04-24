@@ -5,6 +5,9 @@
         <h2 class="md-flex">Current Users</h2>
       </div>
     </md-toolbar>
+    <div ng-show="loading" layout="row" layout-align="center center" layout-margin style=" height: 100px;">
+      <md-progress-circular class="md-hue-2" md-mode="indeterminate"></md-progress-circular>
+    </div>
     <md-content layout-wrap  layout-gt-md="row" layout="column">
       <md-card flex="40" ng-repeat="user in currentUsers">
         <md-content flex class="md-hue"  layout="row">
