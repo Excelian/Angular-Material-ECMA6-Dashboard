@@ -1,12 +1,12 @@
-<md-sidenav class="md-sidenav-left md-whiteframe-z2 side-pane" md-is-locked-open="$mdMedia('gt-sm')"
+<md-sidenav class="md-sidenav-left side-pane md-default-theme" md-is-locked-open="$mdMedia('gt-sm')"
             md-component-id="left">
   <md-toolbar>
     <h1 class="md-toolbar-tools">Dashboard </h1>
   </md-toolbar>
-  <md-content flex role="navigation" class="md-default-theme" layout="row" layout-align="start start">
+  <md-content flex role="navigation"  layout="row" layout-align="start start">
     <ul id="side-menu" flex>
       <li ng-repeat="menuItem in menuItems">
-        <a class="md-default-theme"
+        <a
            ng-href="{{menuItem.url}}">
           <div layout="row">
             <md-button class="md-primary md-hue-1">
