@@ -7,7 +7,7 @@ import 'angular-i18n-en-gb';
 import 'angular-material';
 
 import {mainConfigModule} from 'app/config/main.config';
-
+import {userModule} from 'app/services/user.service';
 import {dashboardRouteModule} from 'app/routes/dashboard/dashboard.route';
 
 export var mainModule = angular.module('mainModule', [
@@ -17,6 +17,7 @@ export var mainModule = angular.module('mainModule', [
   'ngAria',
   'ngMessages',
   'ngMaterial',
+  userModule.name,
   mainConfigModule.name,
   dashboardRouteModule.name
 ]).run();

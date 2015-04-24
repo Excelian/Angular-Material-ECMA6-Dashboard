@@ -3,19 +3,21 @@
     <md-card>
       <md-toolbar class="md-primary">
         <div class="md-toolbar-tools">
-          <h2 class="md-flex">Setup new service</h2>
+          <h2 class="md-flex">Current Users</h2>
         </div>
       </md-toolbar>
-      <md-content layout-padding layout="row" layout-sm="column">
-        <md-input-container>
-          <label>Service Endpoint</label>
-          <input ng-model="user.title">
-        </md-input-container>
-        <md-switch ng-model="data.cb1" aria-label="Switch 1">
-          <label>
-            Monitoring Enabled
-          </label>
-        </md-switch>
+      <md-content class="md-primary " layout-wrap layout-margin layout-fill layout-padding layout="row" layout-sm="column" layout-md="column">
+        <md-content ng-repeat="user in currentUsers" flex="40" layout="row">
+          <div>
+            <img class="circle-image" ng-src="{{user.picture.thumbnail}}" class="md-avatar" />
+          </div>
+          <md-list-item flex  class="md-2-line">
+            <div class="md-list-item-text">
+              <h4 class="md-padding">{{user.name.first + ' ' + user.name.last}}</h4>
+              <h5 class="md-padding">Developer</h5>
+            </div>
+          </md-list-item>
+        </md-content>
       </md-content>
 
 

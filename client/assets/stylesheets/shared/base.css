@@ -192,6 +192,16 @@ textarea::-webkit-input-placeholder {
   height: 100%;
 }
 
+.circle-image{
+  height: 60px;
+  width: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  margin-right: 20px;
+  border-radius: 100%;
+}
+
+
 [ng-cloak] {
   display: none;
 }

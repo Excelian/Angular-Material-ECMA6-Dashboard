@@ -6,6 +6,7 @@ import serviceOverviewTemplate from 'app/components/dashboard/service-overview/s
 import settingsTemplate from 'app/components/dashboard/settings/settings.html!text';
 import alertsTemplate from 'app/components/dashboard/alerts/alerts.html!text';
 import AlertsController from 'app/components/dashboard/alerts/alerts.controller';
+import UserSettingsController from 'app/components/dashboard/settings/user-settings.controller';
 
 export var dashboardRouteModule = angular.module('dashboardRouteModule', [
   'ui.router',
@@ -26,7 +27,8 @@ export var dashboardRouteModule = angular.module('dashboardRouteModule', [
         url: '/settings',
         template: settingsTemplate,
         title:'Settings',
-        icon:'assets/img/icons/ic_settings_24px.svg'
+        icon:'assets/img/icons/ic_settings_24px.svg',
+        controller: UserSettingsController
       }
     )
       .state(
