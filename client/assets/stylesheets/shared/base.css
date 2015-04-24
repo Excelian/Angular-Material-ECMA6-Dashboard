@@ -197,7 +197,7 @@ textarea::-webkit-input-placeholder {
   width: 60px;
   min-width: 60px;
   min-height: 60px;
-  margin-right: 20px;
+  margin: 20px;
   border-radius: 100%;
 }
 

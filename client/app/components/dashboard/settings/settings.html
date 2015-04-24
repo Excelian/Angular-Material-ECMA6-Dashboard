@@ -1,25 +1,24 @@
-<md-card>
-  <md-card-content>
-    <md-card>
-      <md-toolbar class="md-primary">
-        <div class="md-toolbar-tools">
-          <h2 class="md-flex">Current Users</h2>
-        </div>
-      </md-toolbar>
-      <md-content class="md-primary " layout-wrap layout-margin layout-fill layout-padding layout="row" layout-sm="column" layout-md="column">
-        <md-content ng-repeat="user in currentUsers" flex="40" layout="row">
+<div>
+  <md-card >
+    <md-toolbar class="md-primary">
+      <div class="md-toolbar-tools">
+        <h2 class="md-flex">Current Users</h2>
+      </div>
+    </md-toolbar>
+    <md-content layout-wrap  layout-gt-md="row" layout="column">
+      <md-card flex="40" ng-repeat="user in currentUsers">
+        <md-content flex class="md-hue"  layout="row">
           <div>
-            <img class="circle-image" ng-src="{{user.picture.thumbnail}}" class="md-avatar" />
+            <img class="circle-image" ng-src="{{user.picture.thumbnail}}" class="md-avatar"/>
           </div>
-          <md-list-item flex  class="md-2-line">
+          <md-list-item flex class="md-2-line" layout="row" layout-align="start center">
             <div class="md-list-item-text">
-              <h4 class="md-padding">{{user.name.first + ' ' + user.name.last}}</h4>
+              <h4 class="md-padding">{{user.name.first + ' ' + user.name.last | uppercase}}</h4>
               <h5 class="md-padding">Developer</h5>
             </div>
           </md-list-item>
         </md-content>
+        </md-card>
       </md-content>
-
-
-  </md-card-content>
-</md-card>
+    </md-card>
+  </div>
