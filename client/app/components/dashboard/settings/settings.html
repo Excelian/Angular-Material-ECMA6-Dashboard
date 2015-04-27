@@ -1,4 +1,4 @@
-<div >
+<div>
   <md-card style="margin-top: 40px">
     <md-toolbar class="md-primary">
       <div class="md-toolbar-tools">
@@ -10,8 +10,8 @@
     </div>
     <md-content layout-wrap layout-gt-md="row" layout="column" class="md-hue-1">
       <md-card flex="40" ng-repeat="user in currentUsers">
-        <md-content flex  layout="row">
-          <div >
+        <md-content flex layout="row">
+          <div>
             <img class="circle-image" ng-src="{{user.picture.thumbnail}}" class="md-avatar"/>
           </div>
           <md-list-item flex class="md-2-line" layout="row" layout-align="start center">
@@ -25,7 +25,45 @@
             <label hide-sm ng-hide="user.active">Disabled</label>
           </md-switch>
         </md-content>
-        </md-card>
+      </md-card>
+    </md-content>
+  </md-card>
+
+  <md-card>
+    <md-toolbar class="md-primary">
+      <div class="md-toolbar-tools">
+        <h2 class="md-flex">Add User</h2>
+      </div>
+    </md-toolbar>
+    <md-card-content layout="column">
+      <md-content md-theme="docs-dark" layout-padding layout="row" layout-sm="column">
+        <md-input-container flex>
+          <label>Title</label>
+          <input ng-model="user.title">
+        </md-input-container>
+        <md-input-container flex>
+          <label>Email</label>
+          <input ng-model="user.email" type="email">
+        </md-input-container>
       </md-content>
-    </md-card>
-  </div>
+
+      <md-content md-theme="docs-dark" layout-padding layout="row" layout-sm="column">
+        <md-input-container flex>
+          <label>First name</label>
+          <input ng-model="user.firstName">
+        </md-input-container>
+        <md-input-container flex>
+          <label>Last Name</label>
+          <input ng-model="user.lastName">
+        </md-input-container>
+        <section md-theme="default" layout="row" layout-sm="column" layout-align="center center">
+          <md-button ng-click="addNewUser()" style="font-size: 20px" class="md-fab md-primary md-hue-2" aria-label="Profile">
+            +
+          </md-button>
+        </section>
+      </md-content>
+      </md-content>
+
+    </md-card-content>
+  </md-card>
+</div>

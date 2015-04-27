@@ -4,7 +4,7 @@
 AngularJS Material Design ECMA6 Dashboard
 ===============
 
-This is a starting point to create an Angular 1.3 Material Design application that is structured using ES6 modules in a component based way. It comes with karma/protractor testing, Traceuer transpitation and live reload out of the box.
+This is a starting point to create an Angular 1.3 Material Design application that is structured using ES6 modules in a component based way. It comes with karma/protractor testing, Traceur transpilation and live reload out of the box.
 
 - [ECMA6 new features](https://github.com/lukehoban/es6features/blob/master/README.md)
 - [Angular Material](https://material.angularjs.org/#/demo/material.components.input)
