@@ -39,13 +39,22 @@ export var mainConfigModule = angular.module('mainConfigModule', [
     .accentPalette('blue-grey')
     .warnPalette('red', {
       'default': '800'
+    });
+
+  $mdThemingProvider.theme('default-dark')
+    .primaryPalette('blue', {
+      'default': '900'
     })
-    .dark();
-  $mdThemingProvider.theme('docs-dark', 'default')
+    .accentPalette('blue-grey')
+    .warnPalette('red', {
+      'default': '800'
+    }).dark();
+
+  $mdThemingProvider.theme('docs-dark')
     .primaryPalette('yellow')
     .accentPalette('blue-grey')
     .warnPalette('red')
-    .dark();
+    .dark()
 }])
   .run([
     '$rootScope',

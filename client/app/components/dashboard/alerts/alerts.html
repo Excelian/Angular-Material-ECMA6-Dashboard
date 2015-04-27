@@ -6,16 +6,16 @@
           <h2 class="md-flex">System Alerts</h2>
         </div>
       </md-toolbar>
-      <md-content layout-padding layout="row" layout-sm="column">
+      <md-content md-theme="docs-dark" layout-padding layout="row" layout-sm="column">
+        <md-input-container >
+          <label>Filter</label>
+          <input ng-model="displayControl.filter">
+        </md-input-container>
         <md-switch class="md-warn" ng-model="displayControl.displayFrozen" aria-label="Freeze Switch">
           <label class="light-text">
             {{displayControl.displayFrozen?'Unfreeze Display':'Freeze Display'}}
           </label>
         </md-switch>
-        <md-input-container>
-          <label>Filter</label>
-          <input ng-model="displayControl.filter">
-        </md-input-container>
       </md-content>
       <md-content layout-padding layout="column">
         <md-list style="max-height: 300px">

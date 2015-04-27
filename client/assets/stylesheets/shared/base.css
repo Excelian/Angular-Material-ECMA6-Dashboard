@@ -191,7 +191,9 @@ textarea::-webkit-input-placeholder {
 .side-pane{
   height: 100%;
 }
-
+.white{
+  background-color: white;
+}
 .circle-image{
   height: 60px;
   width: 60px;
