@@ -1,5 +1,5 @@
 <div >
-  <md-card>
+  <md-card style="margin-top: 40px">
     <md-toolbar class="md-primary">
       <div class="md-toolbar-tools">
         <h2 class="md-flex">Current Users</h2>
@@ -10,8 +10,8 @@
     </div>
     <md-content layout-wrap layout-gt-md="row" layout="column" class="md-hue-1">
       <md-card flex="40" ng-repeat="user in currentUsers">
-        <md-content flex   layout="row">
-          <div>
+        <md-content flex  layout="row">
+          <div >
             <img class="circle-image" ng-src="{{user.picture.thumbnail}}" class="md-avatar"/>
           </div>
           <md-list-item flex class="md-2-line" layout="row" layout-align="start center">
