@@ -5,7 +5,7 @@ class UserSettingsController {
     UserService.getCurrentUsers().then(function (data) {
       var users = [];
       data.forEach((item)=> {
-        users.push(item.results[0].user);
+        users.push(item.data.results[0].user);
       });
       $scope.loading = false;
       $scope.currentUsers = users;
