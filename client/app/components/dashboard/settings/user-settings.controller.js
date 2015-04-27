@@ -3,7 +3,7 @@ class UserSettingsController {
   constructor($scope, UserService, $mdToast) {
     $scope.loading = true;
     UserService.getCurrentUsers().then(function (data) {
-      var users = [];
+      let users = [];
       data.forEach((item)=> {
         users.push(item.data.results[0].user);
       });

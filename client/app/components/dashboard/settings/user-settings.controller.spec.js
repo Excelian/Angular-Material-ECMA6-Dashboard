@@ -28,6 +28,8 @@ describe('User Settings', () => {
     };
     scope = $injector.get('$rootScope');
     spyOn(UserService, 'addNewUser').and.callThrough();
+    spyOn(mdToast, 'show').and.callThrough();
+
   }));
 
   it('Should create a user settings controller', function (done) {
@@ -45,9 +47,20 @@ describe('User Settings', () => {
 
   it('Should call the new user service on add', function (done) {
     var userSettingsController = new UserSettingsController(scope, UserService, mdToast);
+    scope.$apply();
     scope.addNewUser();
+
     done();
     expect(UserService.addNewUser).toHaveBeenCalled();
   });
 
+
+  it('Should create a toastr on new user creation', function (done) {
+    var userSettingsController = new UserSettingsController(scope, UserService, mdToast);
+    scope.$apply();
+    scope.addNewUser();
+
+    done();
+    expect(mdToast.show).toHaveBeenCalled();
+  });
 });
