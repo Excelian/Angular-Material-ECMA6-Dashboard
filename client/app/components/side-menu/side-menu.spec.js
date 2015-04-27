@@ -25,11 +25,11 @@ describe('Side Menu', function(){
     scope = $injector.get('$rootScope');
   }));
 
-  it('Should create a side menu controller', function(){
+  it('Should create a side menu controller', () => {
     var sideMenuController = new SideMenuController(scope, mdSidenav, state);
     expect(sideMenuController).toBeDefined()
   });
-  it('Should populate the side menu with an array of items with views with titles', function(){
+  it('Should populate the side menu with an array of items with views with titles', () => {
     new SideMenuController(scope, mdSidenav, state);
     expect(scope.menuItems.length).toEqual(1);
   })
