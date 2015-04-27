@@ -9,5 +9,7 @@ export default class UserSettingsController {
       $scope.loading = false;
       $scope.currentUsers = users;
     });
+
+    $scope.fruitNames = ['Apple', 'Banana', 'Orange'];
   }
 }

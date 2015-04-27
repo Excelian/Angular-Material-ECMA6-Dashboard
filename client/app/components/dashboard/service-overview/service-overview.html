@@ -3,50 +3,50 @@
     <md-tab id="tab1" tabindex="1">
       <md-tab-label>Services Overview</md-tab-label>
       <md-tab-template class="md-primary">
-            <div layout="row" layout-sm="column" layout-wrap>
-              <div style="width: 300px">
-                <md-card >
-                  <md-toolbar class="md-warn" >
-                    <div class="md-toolbar-tools">
-                      <h2 class="md-flex">Trade Services</h2>
-                      <span flex></span>
-                      <md-button class="md-icon-button" ng-click="selectedIndex = 2">
-                        <md-icon md-svg-icon="assets/img/icons/ic_laptop_windows_24px.svg"></md-icon>
-                      </md-button>
-                    </div>
-                  </md-toolbar>
-                  <img class="md-card-image" src="http://docs.cacti.net/_media/template:graph:cisco:cisco_cpu_usage.png"/>
-                </md-card>
-              </div>
-              <div style="width: 300px">
-                <md-card >
-                  <md-toolbar class="md-primary">
-                    <div class="md-toolbar-tools">
-                      <h2 class="md-flex">Auth Services</h2>
-                      <span flex></span>
-                      <md-button class="md-icon-button ">
-                        <md-icon  md-svg-icon="assets/img/icons/ic_laptop_windows_24px.svg"></md-icon>
-                      </md-button>
-                    </div>
-                  </md-toolbar>
-                  <img class="md-card-image" src="http://docs.cacti.net/_media/template:graph:cisco:cisco_cpu_usage.png"/>
-                </md-card>
-              </div>
-              <div style="width: 300px">
-                <md-card>
-                  <md-toolbar class="md-accent">
-                    <div class="md-toolbar-tools">
-                      <h2 class="md-flex">User Services</h2>
-                      <span flex></span>
-                      <md-button class="md-icon-button ">
-                        <md-icon md-svg-icon="assets/img/icons/ic_laptop_windows_24px.svg"></md-icon>
-                      </md-button>
-                    </div>
-                  </md-toolbar>
-                  <img class="md-card-image" src="http://docs.cacti.net/_media/template:graph:cisco:cisco_cpu_usage.png"/>
-                </md-card>
-              </div>
-            </div>
+        <div layout="row" layout-sm="column" layout-wrap>
+          <div style="width: 300px">
+            <md-card>
+              <md-toolbar class="md-warn">
+                <div class="md-toolbar-tools">
+                  <h2 class="md-flex">Trade Services</h2>
+                  <span flex></span>
+                  <md-button class="md-icon-button" ng-click="selectedIndex = 2">
+                    <md-icon md-svg-icon="assets/img/icons/ic_laptop_windows_24px.svg"></md-icon>
+                  </md-button>
+                </div>
+              </md-toolbar>
+              <img class="md-card-image" src="http://docs.cacti.net/_media/template:graph:cisco:cisco_cpu_usage.png"/>
+            </md-card>
+          </div>
+          <div style="width: 300px">
+            <md-card>
+              <md-toolbar class="md-primary">
+                <div class="md-toolbar-tools">
+                  <h2 class="md-flex">Auth Services</h2>
+                  <span flex></span>
+                  <md-button class="md-icon-button ">
+                    <md-icon md-svg-icon="assets/img/icons/ic_laptop_windows_24px.svg"></md-icon>
+                  </md-button>
+                </div>
+              </md-toolbar>
+              <img class="md-card-image" src="http://docs.cacti.net/_media/template:graph:cisco:cisco_cpu_usage.png"/>
+            </md-card>
+          </div>
+          <div style="width: 300px">
+            <md-card>
+              <md-toolbar class="md-accent">
+                <div class="md-toolbar-tools">
+                  <h2 class="md-flex">User Services</h2>
+                  <span flex></span>
+                  <md-button class="md-icon-button ">
+                    <md-icon md-svg-icon="assets/img/icons/ic_laptop_windows_24px.svg"></md-icon>
+                  </md-button>
+                </div>
+              </md-toolbar>
+              <img class="md-card-image" src="http://docs.cacti.net/_media/template:graph:cisco:cisco_cpu_usage.png"/>
+            </md-card>
+          </div>
+        </div>
 
       </md-tab-template>
     </md-tab>
@@ -55,17 +55,19 @@
       <md-tab-template>
         <md-card>
           <md-card-content>
-            <md-card >
+            <md-card>
               <md-toolbar class="md-primary">
                 <div class="md-toolbar-tools">
                   <h2 class="md-flex">WCX1234565</h2>
                 </div>
               </md-toolbar>
               <md-subheader>Services Running</md-subheader>
-              <md-list>
-                <md-list-item class="md-3-line"> <h4>Trade Service</h4></md-list-item>
-                <md-list-item class="md-3-line"> <h4>Auth Service</h4></md-list-item>
-              </md-list>
+              <md-content>
+                <md-list layout="column" layout-margin>
+                  <md-list-item class="md-3-line"><h4>Trade Service</h4></md-list-item>
+                  <md-list-item class="md-3-line"><h4>Auth Service</h4></md-list-item>
+                </md-list>
+              </md-content>
           </md-card-content>
         </md-card>
       </md-tab-template>

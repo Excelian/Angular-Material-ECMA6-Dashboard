@@ -7,3 +7,4 @@
 @import"../../app/components/dashboard/dashboard.css";
 @import 'shared/base.css';
 @import"../../app/components/dashboard/settings/user-settings.css";
+@import"../../app-compiled/components/dashboard/alerts/alerts.css";
