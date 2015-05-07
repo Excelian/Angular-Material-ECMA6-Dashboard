@@ -26,6 +26,9 @@ bower install
 
 You can run `script/start` to fire up the application on `http://localhost:3010`.
 
+(You may need to make each file in script folder and add execution permission to script/lib/css.js file.)
+
+
 ## Tests
 
 You can use `npm test` to run JSHint, Karma Unit tests and our E2E tests.
@@ -47,7 +50,7 @@ To enable live-reloading have the developer tools open and activate fb-flo.
 ## Build & Deployment
 
 Create a production optimized build using [AssetGraph Builder](https://github.com/assetgraph/assetgraph-builder):
-
+currently waiting for a fix https://github.com/assetgraph/assetgraph-builder/issues/162
 ```
 DIST=./dist ./script/build
 ```
