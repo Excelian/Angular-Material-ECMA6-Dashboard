@@ -6,7 +6,7 @@ set -e errexit
 
 HTTP_PORT=9393
 
-DIST=./e2e-dist/ ./script/build
+DIST=./e2e-dist/ ./script/start
 
 ./script/lib/server.js --port=$HTTP_PORT --root ./e2e-dist &
 E2E_TEST_PID=$!
