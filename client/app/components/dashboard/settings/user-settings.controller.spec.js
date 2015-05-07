@@ -2,65 +2,63 @@ import angular from 'angular';
 import 'angular-mock';
 import UserSettingsController from './user-settings.controller';
 
-describe('User Settings', () => {
-  var UserService, scope, mdToast;
-  beforeEach(inject(function ($injector, $q) {
-    var deferred = $q.defer();
-    deferred.resolve();
+describe('User Settings', function() {
+  var UserService, $rootScope, mdToast;
+
+  beforeEach(inject(function(_$rootScope_, $q) {
     mdToast = {
       show() {
       },
       simple() {
+        return {
+          content() {
+            return {
+              position() {
+                return {
+                  hideDelay() {
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     };
     UserService = {
-      promise: deferred.promise,
       getCurrentUsers() {
-        var deferred = $q.defer();
-        deferred.resolve([]);
-        return deferred.promise;
+        return $q.when([]);
       },
       addNewUser() {
-        var deferred = $q.defer();
-        deferred.resolve();
-        return deferred.promise;
+        return $q.when({});
       }
     };
-    scope = $injector.get('$rootScope');
+    $rootScope = _$rootScope_;
     spyOn(UserService, 'addNewUser').and.callThrough();
     spyOn(mdToast, 'show').and.callThrough();
-
   }));
 
-  it('Should create a user settings controller', function (done) {
-    var userSettingsController = new UserSettingsController(scope, UserService, mdToast);
-    done();
-    expect(userSettingsController).toBeDefined()
+  it('Should create a user settings controller', function() {
+    var userSettingsController = new UserSettingsController(UserService, mdToast);
+    expect(userSettingsController).toBeDefined();
   });
 
-  it('Should let us know when users are loaded', function (done) {
-    var userSettingsController = new UserSettingsController(scope, UserService, mdToast);
-    scope.$apply();
-    expect(scope.loading).toEqual(false);
-    done();
+  it('Should let us know when users are loaded', function() {
+    var userSettingsController = new UserSettingsController(UserService, mdToast);
+    $rootScope.$digest();
+    expect(userSettingsController.loading).toEqual(false);
   });
 
-  it('Should call the new user service on add', function (done) {
-    var userSettingsController = new UserSettingsController(scope, UserService, mdToast);
-    scope.$apply();
-    scope.addNewUser();
-
-    done();
+  it('Should call the new user service on add', function() {
+    var userSettingsController = new UserSettingsController(UserService, mdToast);
+    userSettingsController.addNewUser();
+    $rootScope.$digest();
     expect(UserService.addNewUser).toHaveBeenCalled();
   });
 
-
-  it('Should create a toastr on new user creation', function (done) {
-    var userSettingsController = new UserSettingsController(scope, UserService, mdToast);
-    scope.$apply();
-    scope.addNewUser();
-
-    done();
+  it('Should create a toast on new user creation', function() {
+    var userSettingsController = new UserSettingsController(UserService, mdToast);
+    userSettingsController.addNewUser();
+    $rootScope.$digest();
     expect(mdToast.show).toHaveBeenCalled();
   });
 });

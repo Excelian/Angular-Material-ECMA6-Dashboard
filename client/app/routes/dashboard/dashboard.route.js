@@ -28,7 +28,8 @@ export var dashboardRouteModule = angular.module('dashboardRouteModule', [
         template: settingsTemplate,
         title:'Settings',
         icon:'assets/img/icons/ic_settings_24px.svg',
-        controller: UserSettingsController
+        controller: UserSettingsController,
+        controllerAs: 'settingsCtrl'
       }
     )
       .state(

@@ -9,7 +9,7 @@
       <md-progress-circular class="md-hue-2" md-mode="indeterminate"></md-progress-circular>
     </div>
     <md-content layout-wrap layout-gt-md="row" layout="column" class="md-hue-1">
-      <md-card flex="40" ng-repeat="user in currentUsers">
+      <md-card flex="40" ng-repeat="user in settingsCtrl.currentUsers">
         <md-content flex layout="row">
           <div>
             <img class="circle-image" ng-src="{{user.picture.thumbnail}}" class="md-avatar"/>
@@ -39,25 +39,25 @@
       <md-content md-theme="docs-dark" layout-padding layout="row" layout-sm="column">
         <md-input-container flex>
           <label>Title</label>
-          <input ng-model="user.title">
+          <input ng-model="settingsCtrl.user.title">
         </md-input-container>
         <md-input-container flex>
           <label>Email</label>
-          <input ng-model="user.email" type="email">
+          <input ng-model="settingsCtrl.user.email" type="email">
         </md-input-container>
       </md-content>
 
       <md-content md-theme="docs-dark" layout-padding layout="row" layout-sm="column">
         <md-input-container flex>
           <label>First name</label>
-          <input ng-model="user.firstName">
+          <input ng-model="settingsCtrl.user.firstName">
         </md-input-container>
         <md-input-container flex>
           <label>Last Name</label>
-          <input ng-model="user.lastName">
+          <input ng-model="settingsCtrl.user.lastName">
         </md-input-container>
         <section md-theme="default" layout="row" layout-sm="column" layout-align="center center">
-          <md-button ng-click="addNewUser()" style="font-size: 20px" class="md-fab md-primary md-hue-2" aria-label="Profile">
+          <md-button ng-click="settingsCtrl.addNewUser()" style="font-size: 20px" class="md-fab md-primary md-hue-2" aria-label="Profile">
             +
           </md-button>
         </section>

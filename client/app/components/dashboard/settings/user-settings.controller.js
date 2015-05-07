@@ -1,26 +1,26 @@
 export default
 class UserSettingsController {
-  constructor($scope, UserService, $mdToast) {
-    $scope.loading = true;
-    UserService.getCurrentUsers().then(function (data) {
-      let users = [];
-      data.forEach((item)=> {
-        users.push(item.data.results[0].user);
-      });
-      $scope.loading = false;
-      $scope.currentUsers = users;
-    });
+  static $inject = ['UserService', '$mdToast'];
 
-    $scope.addNewUser = function () {
-      UserService.addNewUser().then(function (item) {
-        $scope.currentUsers.push(item.data.results[0].user);
-        $mdToast.show(
-          $mdToast.simple()
-            .content('User Added')
-            .position('top right')
-            .hideDelay(4000)
-        );
-      });
-    }
+  constructor(userService, $mdToast) {
+    this.userService = userService;
+    this.$mdToast = $mdToast;
+
+    this.loading = true;
+
+    this.userService.getCurrentUsers().then((users) => {
+      this.loading = false;
+      this.currentUsers = users;
+    });
+  }
+
+  addNewUser() {
+    this.userService.addNewUser().then((user) => {
+      this.currentUsers.push(user);
+      this.$mdToast.show(this.$mdToast.simple()
+        .content('User Added')
+        .position('top right')
+        .hideDelay(4000));
+    });
   }
 }
