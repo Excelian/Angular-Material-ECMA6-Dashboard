@@ -79,4 +79,5 @@ Add `browser.pause();` to your spec.`
 ## Credits
 
 - Build system/ES6 tooling: [Guy Bedford](https://github.com/guybedford)
+-
 - ECMA6 Angular Project by GoCardless
