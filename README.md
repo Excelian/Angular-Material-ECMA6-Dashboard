@@ -57,6 +57,8 @@ DIST=./dist ./script/build
 
 ## Debugging Protractor (E2E) tests
 
+script/e2etest
+
 ### Running individual files
 
 Serve `client/` on port `3010`

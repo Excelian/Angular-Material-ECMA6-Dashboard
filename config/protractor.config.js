@@ -14,29 +14,21 @@ function disableNgAnimate() {
 }
 
 exports.config = {
-  onPrepare: function onPrepare() {
-    browser.addMockModule('disableNgAnimate', disableNgAnimate);
-  },
   directConnect: true,
-  suites: {
-    full: 'client/app/**/*.e2e.js'
-  },
+
+  // Capabilities to be passed to the webdriver instance.
   capabilities: {
-    browserName: 'chrome',
-    shardTestFiles: true,
-    maxInstances: 2,
-    version: 'ANY'
+    'browserName': 'firefox'
   },
-  baseUrl: 'http://localhost:' + options.port,
-  rootElement: '[data-main-app]',
-  framework: 'jasmine',
+
+  // Spec patterns are relative to the current working directly when
+  // protractor is called.
+
+  specs: ['../client/app/sanity.e2e.js'],
+
+  // Options to be passed to Jasmine-node.
   jasmineNodeOpts: {
-    onComplete: null,
-    realtimeFailure: true,
-    showTiming: true,
-    isVerbose: true,
     showColors: true,
-    includeStackTrace: true,
     defaultTimeoutInterval: 30000
   }
 };

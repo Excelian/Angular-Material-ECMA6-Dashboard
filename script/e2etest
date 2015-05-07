@@ -4,13 +4,7 @@
 
 set -e errexit
 
-HTTP_PORT=9393
-
-DIST=./e2e-dist/ ./script/start
-
-./script/lib/server.js --port=$HTTP_PORT --root ./e2e-dist &
-E2E_TEST_PID=$!
-
-trap "kill $E2E_TEST_PID" INT TERM EXIT
-
-HTTP_PORT=$HTTP_PORT ./node_modules/.bin/protractor
+HTTP_PORT=8000
+ls
+./script/lib/server.js --port=$HTTP_PORT --root ./client &
+HTTP_PORT=$HTTP_PORT ./node_modules/.bin/protractor config/protractor.config.js
