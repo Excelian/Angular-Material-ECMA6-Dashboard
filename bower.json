@@ -8,8 +8,8 @@
   "dependencies": {
     "traceur-runtime": "0.0.74",
     "system.js": "~0.10.2",
-    "plugin-text": "https://github.com/systemjs/plugin-text",
-    "plugin-json": "https://github.com/systemjs/plugin-json",
+    "plugin-text": "https://github.com/systemjs/plugin-text.git",
+    "plugin-json": "https://github.com/systemjs/plugin-json.git",
     "angular": "1.3.6",
     "angular-i18n": "1.3.6",
     "angular-animate": "1.3.6",
@@ -20,8 +20,8 @@
     "angular-ui-router": "~0.2.13",
     "normalize-css": "~3.0.2",
     "lodash": "~2.4.1",
-    "assert": "https://github.com/angular/assert",
-    "material-design-icons": "https://github.com/google/material-design-icons",
+    "assert": "https://github.com/angular/assert.git",
+    "material-design-icons": "https://github.com/google/material-design-icons.git",
     "angular-material": "~0.8.3"
   },
   "resolutions": {
