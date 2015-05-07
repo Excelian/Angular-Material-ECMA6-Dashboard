@@ -18,7 +18,7 @@ class UserSettingsController {
           $mdToast.simple()
             .content('User Added')
             .position('top right')
-            .hideDelay(3000)
+            .hideDelay(4000)
         );
       });
     }
