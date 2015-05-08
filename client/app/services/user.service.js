@@ -1,23 +1,33 @@
 import angular from 'angular';
 
-export var userModule = angular.module('userModule', []).service('UserService', ['$http','$q',
-  function UserService($http,$q) {
-    var apiCalls = [];
-    for (var x = 0; x < 2; x++) {
-      apiCalls.push($http.get('http://api.randomuser.me/'));
-    }
 
-    var getCurrentUsers = function(){
-      return $q.all(apiCalls);
-    };
+class UsersService {
+  static $inject = ['$http', '$q'];
 
-    var addNewUser = function(){
-      return $http.get('http://api.randomuser.me/');
-    };
-
-    return {
-      getCurrentUsers,
-      addNewUser
-    };
+  constructor($http, $q) {
+    this.$http = $http;
+    this.$q = $q;
   }
-]);
+
+  getCurrentUsers() {
+    var deferred = this.$q.defer();
+    this.$http.get('http://api.randomuser.me/?results=2', {cache: true})
+      .success((data) => {
+        deferred.resolve(data.results.map((item) => item.user));
+      });
+    return deferred.promise;
+  }
+
+  addNewUser() {
+    var deferred = this.$q.defer();
+    this.$http.get('http://api.randomuser.me/')
+      .success((data) => {
+        deferred.resolve(data.results[0].user);
+      });
+    return deferred.promise;
+  }
+}
+
+
+export var userModule = angular.module('userModule', [])
+  .service('UserService', UsersService);
