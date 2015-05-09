@@ -32,13 +32,14 @@ export var dashboardRouteModule = angular.module('dashboardRouteModule', [
         controllerAs: 'settingsCtrl'
       }
     )
-      .state(
+    .state(
       'app.alerts', {
         url: '/alerts',
         template: alertsTemplate,
-        title:'Alerts',
-        icon:'assets/img/icons/ic_access_alarm_24px.svg',
-        controller: AlertsController
+        title: 'Alerts',
+        icon: 'assets/img/icons/ic_access_alarm_24px.svg',
+        controller: AlertsController,
+        controllerAs: 'alertsCtrl'
       }
     );
   }
