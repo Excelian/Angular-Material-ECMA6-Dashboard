@@ -1,4 +1,4 @@
-describe('Services sanity check', function() {
+describe('Alerts sanity check', function() {
 
   function AlertsPage() {
     this.filterInut = element(by.model('alertsCtrl.displayControl.filter'));
