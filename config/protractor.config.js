@@ -24,7 +24,7 @@ exports.config = {
   // Spec patterns are relative to the current working directly when
   // protractor is called.
 
-  specs: ['../client/app/sanity.e2e.js'],
+  specs: ['../client/app/e2e/*.e2e.js'],
 
   // Options to be passed to Jasmine-node.
   jasmineNodeOpts: {
