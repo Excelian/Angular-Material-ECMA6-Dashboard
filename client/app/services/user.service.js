@@ -2,7 +2,6 @@ import angular from 'angular';
 
 
 class UsersService {
-  static $inject = ['$http', '$q'];
 
   constructor($http, $q) {
     this.$http = $http;

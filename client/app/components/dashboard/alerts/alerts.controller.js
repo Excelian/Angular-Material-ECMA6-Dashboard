@@ -5,52 +5,55 @@ export default class AlertsController {
       filter: '',
       displayFrozen: false
     };
-    this.alerts = [];
-
-    this.alerts.push({type: 'error', ts: '2015-04-17 17:00:01', description: 'Trade Services connection lost.'});
-    this.alerts.push({
-      type: 'warning',
-      ts: '2015-04-17 16:52:23',
-      description: 'Auth Services response timeout, retrying.'
-    });
-    this.alerts.push({type: 'error', ts: '2015-04-17 16:00:01', description: 'Trade Services connection lost.'});
-    this.alerts.push({
-      type: 'warning',
-      ts: '2015-04-17 15:52:23',
-      description: 'Auth Services response timeout, retrying.'
-    });
-    this.alerts.push({
-      type: 'warning',
-      ts: '2015-04-17 15:42:23',
-      description: 'Auth1 Services response timeout, retrying.'
-    });
-    this.alerts.push({type: 'error', ts: '2015-04-17 17:00:01', description: 'Trade Services connection lost.'});
-    this.alerts.push({
-      type: 'warning',
-      ts: '2015-04-17 16:52:23',
-      description: 'Auth Services response timeout, retrying.'
-    });
-    this.alerts.push({type: 'error', ts: '2015-04-17 16:00:01', description: 'Trade Services connection lost.'});
-    this.alerts.push({
-      type: 'warning',
-      ts: '2015-04-17 15:52:23',
-      description: 'Auth Services response timeout, retrying.'
-    });
-    this.alerts.push({
-      type: 'warning',
-      ts: '2015-04-17 15:42:23',
-      description: 'Auth Services response timeout, retrying.'
-    });
-    this.alerts.push({
-      type: 'warning',
-      ts: '2015-04-17 15:42:23',
-      description: 'Auth Services response timeout, retrying.'
-    });
-    this.alerts.push({
-      type: 'warning',
-      ts: '2015-04-17 15:42:23',
-      description: 'Auth Services response timeout, retrying.'
-    });
+    this.alerts = [
+      {
+        type: 'error',
+        ts: '2015-04-17 17:00:01',
+        description: 'Trade Services connection lost.'
+      },
+      {
+        type: 'warning',
+        ts: '2015-04-17 16:52:23',
+        description: 'Auth Services response timeout, retrying.'
+      },
+      {type: 'error', ts: '2015-04-17 16:00:01', description: 'Trade Services connection lost.'},
+      {
+        type: 'warning',
+        ts: '2015-04-17 15:52:23',
+        description: 'Auth Services response timeout, retrying.'
+      },
+      {
+        type: 'warning',
+        ts: '2015-04-17 15:42:23',
+        description: 'Auth1 Services response timeout, retrying.'
+      },
+      {type: 'error', ts: '2015-04-17 17:00:01', description: 'Trade Services connection lost.'},
+      {
+        type: 'warning',
+        ts: '2015-04-17 16:52:23',
+        description: 'Auth Services response timeout, retrying.'
+      },
+      {type: 'error', ts: '2015-04-17 16:00:01', description: 'Trade Services connection lost.'},
+      {
+        type: 'warning',
+        ts: '2015-04-17 15:52:23',
+        description: 'Auth Services response timeout, retrying.'
+      },
+      {
+        type: 'warning',
+        ts: '2015-04-17 15:42:23',
+        description: 'Auth Services response timeout, retrying.'
+      },
+      {
+        type: 'warning',
+        ts: '2015-04-17 15:42:23',
+        description: 'Auth Services response timeout, retrying.'
+      },
+      {
+        type: 'warning',
+        ts: '2015-04-17 15:42:23',
+        description: 'Auth Services response timeout, retrying.'
+      }];
 
     // Periodically add a new event to the array
     var logTick = () => {

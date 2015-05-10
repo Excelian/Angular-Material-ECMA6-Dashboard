@@ -10,7 +10,7 @@ module.exports = function(config) {
   config.set({
     basePath: '../client',
     frameworks: ['jasmine', 'traceur'],
-    browsers: ['Chrome'],
+    browsers: ['Firefox'],
     reporters: ['dots','progress','coverage'],
     plugins: ['karma-jasmine','karma-traceur-preprocessor','karma-coverage','karma-chrome-launcher','karma-firefox-launcher'],
     files: [
