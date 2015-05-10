@@ -10,6 +10,9 @@ This is a starting point to create an Angular 1.3 Material Design application th
 - [Angular Material](https://material.angularjs.org/#/demo/material.components.input)
 - [Google Material Design Spec](http://www.google.com/design/spec/material-design/introduction.html)
 
+![Dashboard](https://cloud.githubusercontent.com/assets/6848978/7554734/d4c52884-f72b-11e4-87be-b47090fcfd4f.PNG)
+
+
 ## Prerequisites:
 - node.js
 
