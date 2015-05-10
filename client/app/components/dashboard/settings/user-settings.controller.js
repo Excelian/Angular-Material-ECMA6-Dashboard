@@ -1,5 +1,6 @@
 export default
 class UserSettingsController {
+  static $inject = ['UserService', '$mdToast'];
 
   constructor(userService, $mdToast) {
     this.userService = userService;
