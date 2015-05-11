@@ -13,6 +13,7 @@ before_script:
   - 'bower install'
 
 after_script:
+  - 'script/e2etest'
   - 'mv ./client/coverage/**/lcov.info ./client/ '
   - 'ls ./client'
   - 'cd client'
