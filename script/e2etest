@@ -6,5 +6,5 @@ set -e errexit
 
 HTTP_PORT=8000
 ls
-./script/lib/server.js --port=$HTTP_PORT --root ./client &
+sh ./script/lib/server.js --port=$HTTP_PORT --root ./client &
 HTTP_PORT=$HTTP_PORT ./node_modules/.bin/protractor config/protractor.config.js
