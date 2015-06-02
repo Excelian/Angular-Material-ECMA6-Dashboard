@@ -1,6 +1,10 @@
 [![Code Climate](https://codeclimate.com/github/Excelian/Angular-Material-ECMA6-Dashboard/badges/gpa.svg)](https://codeclimate.com/github/Excelian/Angular-Material-ECMA6-Dashboard)
 [![Test Coverage](https://codeclimate.com/github/Excelian/Angular-Material-ECMA6-Dashboard/badges/coverage.svg)](https://codeclimate.com/github/Excelian/Angular-Material-ECMA6-Dashboard)
 [![Build Status](https://travis-ci.org/Excelian/Angular-Material-ECMA6-Dashboard.svg?branch=master)](https://travis-ci.org/Excelian/Angular-Material-ECMA6-Dashboard)
+[![Dependency Status](https://david-dm.org/Excelian/Angular-Material-ECMA6-Dashboard.svg)](https://david-dm.org/Excelian/Angular-Material-ECMA6-Dashboard)
+[![devDependency Status](https://david-dm.org/Excelian/Angular-Material-ECMA6-Dashboard/dev-status.svg)](https://david-dm.org/Excelian/Angular-Material-ECMA6-Dashboard#info=devDependencies)
+
+
 AngularJS Material Design ECMA6 Dashboard
 ===============
 
@@ -54,9 +58,7 @@ To enable live-reloading have the developer tools open and activate fb-flo.
 
 Create a production optimized build using [AssetGraph Builder](https://github.com/assetgraph/assetgraph-builder):
 currently waiting for a fix https://github.com/assetgraph/assetgraph-builder/issues/162
-```
-DIST=./dist ./script/build
-```
+
 
 ## Debugging Protractor (E2E) tests
 
@@ -81,6 +83,4 @@ Add `browser.pause();` to your spec.`
 
 ## Credits
 
-- Build system/ES6 tooling: [Guy Bedford](https://github.com/guybedford)
--
 - ECMA6 Angular Project by GoCardless
