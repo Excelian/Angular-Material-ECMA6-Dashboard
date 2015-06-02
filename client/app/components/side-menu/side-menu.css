@@ -1,6 +1,5 @@
 #side-menu button.md-button {
   width: 100%;
-  padding-top: 20px;
 }
 
 #side-menu a span{
@@ -10,3 +9,6 @@
 #side-menu md-icon{
   margin-right: 10px;
 }
+ #close{
+   overflow-x: hidden;
+ }

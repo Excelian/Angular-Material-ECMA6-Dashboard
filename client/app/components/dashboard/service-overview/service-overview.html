@@ -1,8 +1,8 @@
-<div class="tabsdemoStaticTabs sample">
-  <md-tabs class="md-accent" md-selected="data.selectedIndex">
-    <md-tab id="tab1" tabindex="1">
-      <md-tab-label>Services Overview</md-tab-label>
-      <md-tab-template class="md-primary">
+<div class="tabsdemoDynamicHeight">
+  <md-content class="md-padding">
+    <md-tabs md-dynamic-height="" md-border-bottom="">
+      <md-tab label="Services Overview">
+      <md-content class="md-primary">
         <div layout="row" layout-sm="column" layout-wrap>
           <div style="width: 300px">
             <md-card>
@@ -48,13 +48,10 @@
           </div>
         </div>
 
-      </md-tab-template>
+      </md-content>
     </md-tab>
-    <md-tab id="tab2" tabindex="2">
-      <md-tab-label>Instances Overview</md-tab-label>
-      <md-tab-template>
-        <md-card>
-          <md-card-content>
+    <md-tab label="Instances Overview">
+      <md-content>
             <md-card>
               <md-toolbar class="md-primary">
                 <div class="md-toolbar-tools">
@@ -68,10 +65,8 @@
                   <md-list-item class="md-3-line"><h4>Auth Service</h4></md-list-item>
                 </md-list>
               </md-content>
-          </md-card-content>
-        </md-card>
-      </md-tab-template>
+            </md-card>
+        </md-content>
     </md-tab>
-
   </md-tabs>
 </div>

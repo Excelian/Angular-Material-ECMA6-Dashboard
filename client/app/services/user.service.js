@@ -2,7 +2,6 @@ import angular from 'angular';
 
 
 class UsersService {
-  static $inject = ['$http', '$q'];
 
   constructor($http, $q) {
     this.$http = $http;
@@ -30,4 +29,4 @@ class UsersService {
 
 
 export var userModule = angular.module('userModule', [])
-  .service('UserService', UsersService);
+  .service('userService', UsersService);
