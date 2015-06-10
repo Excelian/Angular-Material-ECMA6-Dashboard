@@ -17,7 +17,7 @@ This is a starting point to create an Angular 1.4 Material Design application th
 ![Dashboard](https://cloud.githubusercontent.com/assets/6848978/7554734/d4c52884-f72b-11e4-87be-b47090fcfd4f.PNG)
 
 
-## Prerequisites:
+## Prerequisites:npm
 - node.js
 
 ## Application Dependencies

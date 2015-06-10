@@ -1,0 +1,26 @@
+<div class="tabsdemoDynamicHeight">
+  <md-content class="md-padding">
+    <md-tabs md-dynamic-height="" md-border-bottom="">
+      <md-tab ng-repeat="market in financialsCtrl.Markets" label="{{market.name}}">
+        <md-content class="md-primary">
+          <div layout="row" layout-sm="column" layout-wrap>
+            <div style="width: 400px" ng-repeat="stock in market.stocks">
+              <md-card>
+                <md-toolbar class="md-primary">
+                  <div class="md-toolbar-tools">
+                    <h5 class="md-flex">{{stock.name}} </h5>
+                    <span flex></span>
+                    <h5 class="md-flex md-ri">{{market.name}}:{{stock.symbol}}</h5>
+                    <md-button class="md-icon-button ">
+                      <md-icon md-svg-icon="assets/img/icons/ic_laptop_windows_24px.svg"></md-icon>
+                    </md-button>
+                  </div>
+                </md-toolbar>
+                <div layout-padding id="{{'d3chart_'+market.name+'_'+stock.symbol}}"></div>
+              </md-card>
+            </div>
+          </div>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+</div>

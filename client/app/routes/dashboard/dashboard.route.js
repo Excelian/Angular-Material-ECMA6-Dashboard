@@ -5,8 +5,11 @@ import {appRouteModule} from 'app/routes/app.route';
 import serviceOverviewTemplate from 'app/components/dashboard/service-overview/service-overview.html!text';
 import settingsTemplate from 'app/components/dashboard/settings/settings.html!text';
 import alertsTemplate from 'app/components/dashboard/alerts/alerts.html!text';
+import financialsTemplate from 'app/components/dashboard/financials/financials.html!text';
 import AlertsController from 'app/components/dashboard/alerts/alerts.controller';
 import UserSettingsController from 'app/components/dashboard/settings/user-settings.controller';
+import ServiceOverviewController from 'app/components/dashboard/service-overview/service-overview.controller';
+import FinancialsController from 'app/components/dashboard/financials/financials.controller';
 
 export var dashboardRouteModule = angular.module('dashboardRouteModule', [
   'ui.router',
@@ -19,10 +22,22 @@ export var dashboardRouteModule = angular.module('dashboardRouteModule', [
         url: '/',
         template: serviceOverviewTemplate,
         title:'Services',
-        icon:'assets/img/icons/ic_trending_up_24px.svg'
+        icon:'assets/img/icons/ic_traffic_24px.svg',
+        controller: ServiceOverviewController,
+        controllerAs: 'serviceOverviewCtrl'
       }
     )
-    .state(
+      .state(
+      'app.financials', {
+        url: '/financials',
+        template: financialsTemplate,
+        title:'Financial Charts',
+        icon:'assets/img/icons/ic_trending_up_24px.svg',
+        controller: FinancialsController,
+        controllerAs: 'financialsCtrl'
+      }
+    )
+      .state(
       'app.settings', {
         url: '/settings',
         template: settingsTemplate,
