@@ -15,6 +15,7 @@ This is a starting point to create an Angular 1.4 Material Design application th
 - [Google Material Design Spec](http://www.google.com/design/spec/material-design/introduction.html)
 
 ![Dashboard](https://cloud.githubusercontent.com/assets/6848978/7554734/d4c52884-f72b-11e4-87be-b47090fcfd4f.PNG)
+![Financial Dashboard](https://cloud.githubusercontent.com/assets/7428561/8108646/97eae12e-1049-11e5-8ef5-e8d4a3dd1cd7.png)
 
 
 ## Prerequisites:
