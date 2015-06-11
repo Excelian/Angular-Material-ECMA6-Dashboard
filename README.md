@@ -85,3 +85,4 @@ Add `browser.pause();` to your spec.`
 ## Credits
 
 - ECMA6 Angular Project by GoCardless
+- D3 Financial Components by Scott Logic
