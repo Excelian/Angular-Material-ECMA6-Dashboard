@@ -1,6 +1,7 @@
 export default class FinancialsController {
-  constructor($timeout) {
+  constructor($timeout, financialsService) {
 
+    this.financialsService = financialsService;
     this.Markets = [
       {
         name: 'NASDAQ',
@@ -9,7 +10,8 @@ export default class FinancialsController {
             name: 'Google',
             symbol: 'GOOG',
             chart: this.createChartCandlestickAndBollinger
-          },
+          }
+          ,
           {
             name: 'Microsoft Corp.',
             symbol: 'MSFT',
@@ -21,42 +23,45 @@ export default class FinancialsController {
             chart: this.createChartAreaHighLow
           }
         ]
-      },
+      }
+      ,
       {
-        name: 'LSE', stocks: [
-        {
-          name: 'Barclays',
-          symbol: 'BARC',
-          chart: this.createChartOHLC
-        },
-        {
-          name: 'HSBC',
-          symbol: 'HSBA',
-          chart: this.createChartOHLC
-        },
-        {
-          name: 'Lloyds Group',
-          symbol: 'LLOY',
-          chart: this.createChartOHLC
-        },
-        {
-          name: 'Royal Bank of Scotland',
-          symbol: 'RBS',
-          chart: this.createChartOHLC
-        }
+        name: 'NYSE',
+        stocks: [
+          {
+            name: 'Apple Inc.',
+            symbol: 'AAPL',
+            chart: this.createChartOHLC
+          },
+          {
+            name: 'eBay',
+            symbol: 'EBAY',
+            chart: this.createChartOHLC
+          },
+          {
+            name: 'Red Hat Inc.',
+            symbol: 'RHT',
+            chart: this.createChartOHLC
+          },
+          {
+            name: 'Yahoo! Inc.',
+            symbol: 'YHOO',
+            chart: this.createChartOHLC
+          }
         ]
       }
     ];
 
     this.Markets.forEach(function (market) {
       market.stocks.forEach(function (stock) {
-        $timeout(stock.chart, 0, true, 'd3chart_' + market.name + '_' + stock.symbol, stock.symbol);
-      });
-    });
+        this.financialsService.getPriceData(stock.symbol).then((data) => {
+          $timeout(stock.chart, 0, true, 'd3chart_' + market.name + '_' + stock.symbol, stock.symbol, data);
+        });
+      }, this);
+    }, this);
   }
 
-  createChartCandlestickAndBollinger(el, symbol) {
-    var data = fc.dataGenerator()(50);
+  createChartCandlestickAndBollinger(el, symbol, data) {
 
     var chart = fc.charts.linearTimeSeries()
       .xDomain(fc.utilities.extent(data, 'date'))
@@ -85,8 +90,7 @@ export default class FinancialsController {
       .call(chart);
   }
 
-  createChartOHLC(el, symbol) {
-    var data = fc.dataGenerator()(50);
+  createChartOHLC(el, symbol, data) {
 
     var chart = fc.charts.linearTimeSeries()
       .xDomain(fc.utilities.extent(data, 'date'))
@@ -112,8 +116,7 @@ export default class FinancialsController {
       .call(chart);
   }
 
-  createChartAreaHighLow(el, symbol) {
-    var data = fc.dataGenerator()(50);
+  createChartAreaHighLow(el, symbol, data) {
 
     var chart = fc.charts.linearTimeSeries()
       .xDomain(fc.utilities.extent(data, 'date'))
@@ -142,6 +145,7 @@ export default class FinancialsController {
       .datum(data)
       .call(chart);
   }
+
 
 ;
 }
