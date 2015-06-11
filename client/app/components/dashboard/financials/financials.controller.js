@@ -18,9 +18,14 @@ export default class FinancialsController {
             chart: this.createChartOHLC
           },
           {
+            name: 'eBay',
+            symbol: 'EBAY',
+            chart: this.createChartAreaHighLow
+          },
+          {
             name: 'Amazon.com Inc.',
             symbol: 'AMZN',
-            chart: this.createChartAreaHighLow
+            chart: this.createChartOHLCAndVolume
           }
         ]
       }
@@ -31,11 +36,6 @@ export default class FinancialsController {
           {
             name: 'Apple Inc.',
             symbol: 'AAPL',
-            chart: this.createChartOHLC
-          },
-          {
-            name: 'eBay',
-            symbol: 'EBAY',
             chart: this.createChartOHLC
           },
           {
@@ -115,6 +115,59 @@ export default class FinancialsController {
       .datum(data)
       .call(chart);
   }
+
+  createChartOHLCAndVolume(el, symbol, data) {
+
+    var chart = fc.charts.linearTimeSeries()
+      .xDomain(fc.utilities.extent(data, 'date'))
+      .xTicks(5)
+      .yDomain(fc.utilities.extent(data, ['high', 'low']))
+      .yNice()
+      .yTicks(5);
+
+    var gridlines = fc.scale.gridlines();
+    var ohlc = fc.series.ohlc();
+
+    var multi = fc.series.multi()
+      .series([gridlines, ohlc]);
+    chart.plotArea(multi);
+
+    d3.select("#" + el)
+      .append('svg')
+      .style({
+        width: '100%'
+      })
+      .datum(data)
+      .call(chart);
+
+    function createChartVolume(el, data) {
+
+      var chart = fc.charts.linearTimeSeries()
+        .xDomain(fc.utilities.extent(data, 'date'))
+        .xTicks(5)
+        .yDomain(fc.utilities.extent(data, ['volume']))
+        .yNice()
+        .yTicks(5);
+
+      var bar = fc.series.bar().yValue(function(d) { return d.volume; });
+
+      var multi = fc.series.multi()
+        .series([bar]);
+      chart.plotArea(multi);
+
+      d3.select("#" + el)
+        .append('svg')
+        .style({
+          width: '100%',
+          height: '50px'
+        })
+        .datum(data)
+        .call(chart);
+    }
+    createChartVolume(el, data);
+  }
+
+
 
   createChartAreaHighLow(el, symbol, data) {
 
