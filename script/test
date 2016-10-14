@@ -4,10 +4,10 @@
 
 set -e errexit
 
-./script/ensure-no-ddescribe
-
-./node_modules/.bin/jshint .
-
 ./node_modules/.bin/karma start ./config/karma.config.js --single-run
 
-./script/e2etest
+sh ./script/e2etest
+
+sh ./script/ensure-no-ddescribe
+
+./node_modules/.bin/jshint .

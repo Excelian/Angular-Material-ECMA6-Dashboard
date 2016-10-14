@@ -4,7 +4,7 @@
   "version": "0.0.1-pre",
   "description": "ES6 + AngularJS",
   "scripts": {
-    "test": "./node_modules/.bin/karma start ./config/karma.config.js --single-run --browsers Firefox",
+    "test": "sh script/test",
     "start": "sh script/start"
   },
   "repository": {
