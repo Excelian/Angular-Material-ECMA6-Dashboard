@@ -7,6 +7,7 @@
   <title>Dashboard</title>
   <base href="/">
   <link rel="stylesheet" href="./main.css">
+  <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
 </head>
 <body data-main-app ng-cloak>
   <!--[if lt IE 10]>
@@ -37,6 +38,12 @@
   <script src="./components/es6-module-loader/dist/es6-module-loader.src.js"></script>
   <script src="./components/system.js/dist/system.src.js"></script>
   <script src="./loader.config.js"></script>
+  <script src="./components/d3-financial-components/node_modules/d3/d3.js"></script>
+  <script src="./components/d3-financial-components/node_modules/css-layout/src/Layout.js"></script>
+  <script src="./components/d3-financial-components/dist/d3-financial-components.js"></script>
+
+  <link href="./components/d3-financial-components/dist/d3-financial-components.css" rel="stylesheet"/>
+
   <script>
     System.baseURL = '/';
     System.import('app/bootstrap');

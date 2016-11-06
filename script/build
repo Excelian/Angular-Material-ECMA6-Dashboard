@@ -1,3 +1,4 @@
+cd script
 #!/bin/bash
 # Usage: script/build
 # Runs the projects's build.

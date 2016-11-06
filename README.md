@@ -18,7 +18,7 @@ This is a starting point to create an Angular 1.4 Material Design application th
 ![Financial Dashboard](https://cloud.githubusercontent.com/assets/7428561/8108646/97eae12e-1049-11e5-8ef5-e8d4a3dd1cd7.png)
 
 
-## Prerequisites:
+## Prerequisites:npm
 - node.js
 
 ## Application Dependencies
